@@ -9,6 +9,11 @@ function App() {
     setTodos([form.todo.value, ...todos]);
   };
 
+  const removeTodo = (seletedIndex) => {
+    const filterTodos = todos.filter((todo, index) => index != seletedIndex);
+    setTodos(filterTodos);
+  };
+
   return (
     <>
       <form onSubmit={handleOnSubmit}>
@@ -17,7 +22,10 @@ function App() {
       </form>
       <ul>
         {todos.map((todo, i) => (
-          <li key={i}>{todo}</li>
+          <li key={i}>
+            {todo}
+            <button onClick={() => removeTodo(i)}>X</button>
+          </li>
         ))}
       </ul>
     </>
