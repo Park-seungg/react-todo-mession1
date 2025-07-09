@@ -54,7 +54,7 @@ todos: [
 - 데이터 저장: localStorage를 사용해 할 일 목록과 마지막 ID를 저장, 새로고침 후에도 데이터가 유지
 
 # 🎯 기능 구현
-![image](https://github.com/user-attachments/assets/c1f3fb92-0a02-4d24-b84e-bacc755795ba)
+![image](https://github.com/user-attachments/assets/c10a0e94-b751-433d-a5e3-aed21e8dbb1a)
 
 # 🖌️ 느낀점
 - React 컴포넌트 분리: 상태 관리와 UI를 분리하며 코드 구조를 깔끔하게 유지하는 법을 배웠습니다.
