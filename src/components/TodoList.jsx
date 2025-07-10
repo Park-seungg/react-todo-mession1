@@ -2,9 +2,9 @@ import TodoItem from "./TodoItem";
 
 function TodoList({
   todos,
+  deleteTodo,
   toggleComplete,
   changePriority,
-  deleteTodo,
   startEdit,
   editIndex,
   editText,
@@ -21,9 +21,9 @@ function TodoList({
           key={i}
           todo={todo}
           index={i}
+          deleteTodo={deleteTodo}
           toggleComplete={toggleComplete}
           changePriority={changePriority}
-          deleteTodo={deleteTodo}
           startEdit={startEdit}
           editIndex={editIndex}
           editText={editText}
